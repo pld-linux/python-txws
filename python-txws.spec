@@ -17,18 +17,15 @@ Source0:	http://pypi.python.org/packages/source/t/txWS/txWS-%{version}.tar.gz
 URL:		http://pypi.python.org/pypi/txWS
 Patch0:		%{name}-drop-vcversioner.patch
 BuildRequires:	rpm-pythonprov
-%if %{with python3}
-BuildRequires:	python-TwistedCore
-BuildRequires:	python-TwistedWeb
+%if %{with python2}
+BuildRequires:	python-modules
 BuildRequires:	python-setuptools
 BuildRequires:	python-six
 %endif
 %if %{with python3}
-BuildRequires:	python3-TwistedWeb
-BuildRequires:	python3-devel
+BuildRequires:	python3-modules
 BuildRequires:	python3-setuptools
 BuildRequires:	python3-six
-BuildRequires:	python3-twisted-core
 %endif
 Requires:	python-TwistedCore
 Requires:	python-six
