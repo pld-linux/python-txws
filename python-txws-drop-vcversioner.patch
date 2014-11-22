@@ -1,0 +1,27 @@
+From db6dbf5db7c3c8c19e2c1327affef55e38a47482 Mon Sep 17 00:00:00 2001
+From: Ralph Bean <rbean@redhat.com>
+Date: Thu, 8 May 2014 08:36:04 -0400
+Subject: [PATCH] drop vcversioner
+
+---
+ setup.py | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+
+diff --git a/setup.py b/setup.py
+index e4b3372..e7b32aa 100755
+--- a/setup.py
++++ b/setup.py
+@@ -5,8 +5,8 @@ from setuptools import setup
+ setup(
+     name="txWS",
+     py_modules=["txws"],
+-    setup_requires=["vcversioner", "six"],
+-    vcversioner={},
++    setup_requires=["six"],
++    version="0.9.1",
+     author="Corbin Simpson",
+     author_email="simpsoco@osuosl.org",
+     description="Twisted WebSockets wrapper",
+-- 
+1.9.0
+
