@@ -9,7 +9,7 @@
 Summary:	Twisted WebSockets wrapper
 Name:		python-txws
 Version:	0.9.1
-Release:	1
+Release:	2
 License:	MIT
 Group:		Development/Languages
 Source0:	http://pypi.python.org/packages/source/t/txWS/txWS-%{version}.tar.gz
@@ -28,8 +28,8 @@ BuildRequires:	python3-setuptools
 BuildRequires:	python3-six
 %endif
 Requires:	python-TwistedCore
+Requires:	python-TwistedWeb
 Requires:	python-six
-Requires:	python-twisted-web
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
