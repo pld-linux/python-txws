@@ -15,6 +15,7 @@ Group:		Development/Languages
 Source0:	http://pypi.python.org/packages/source/t/txWS/txWS-%{version}.tar.gz
 # Source0-md5:	d113910af0521ea62db8a0f3d7c63abb
 URL:		http://pypi.python.org/pypi/txWS
+BuildRequires:	rpmbuild(macros) >= 1.710
 Patch0:		%{name}-drop-vcversioner.patch
 BuildRequires:	rpm-pythonprov
 %if %{with python2}
