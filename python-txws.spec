@@ -9,7 +9,7 @@
 Summary:	Twisted WebSockets wrapper
 Name:		python-txws
 Version:	0.9.1
-Release:	3
+Release:	4
 License:	MIT
 Group:		Development/Languages
 Source0:	http://pypi.python.org/packages/source/t/txWS/txWS-%{version}.tar.gz
