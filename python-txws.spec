@@ -53,7 +53,7 @@ applications.
 
 %prep
 %setup -q -n txWS-%{version}
-%patch0 -p1
+%patch -P0 -p1
 
 rm -r *.egg*
 
